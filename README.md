@@ -3,7 +3,7 @@
 
 ## COMMANDS :
 
-    **git init** - (create new emty local repository)
+    git init - (create new emty local repository)
 
     git status - (show status of repository)
 
@@ -28,10 +28,14 @@
 
     git push -u origin main  -(send files to the remote repository)
     git push -u origin *branch*  -(send files to the remote repository from current branch)  
+    git push   - (you can use at second time)
 
     git clone *SHH*    - (clones somebodys repository to your computer)
+    git clone *SHH* *folder*    - (clones somebodys repository to your computer and create folder)
 
     cd *folder* - (change directory) cd folder2 (for example)
+    cd ..  -(back to folder up)
+    cd ...   -(go to dekstop)
 
     git branch - (check branches)
     git branch *new-branch*  - (create a new branch)
@@ -39,6 +43,12 @@
     git checkout -b *new-branch* - (create and join new branch)
 
     git merge *branch* -(merge branches (объеденить ветки, должен находиться в ветке в которую объеденяешь))
+
+    git pull    - (update (take changes) from online repository)
+    then ESC :wq
+
+    git revert *hash* (correction or deletion coomit)
+
 
 
 ## CREATE NEW LOCAL REPOSITORY:
@@ -53,7 +63,7 @@
 
     git add *file* - file with changes
     git commit -m "Commit changes"
-or
+        or
     git commit -a -m "*commit*"
 
 ## JOIN SOME COMMIT
@@ -69,6 +79,7 @@ or
     git push -u origin main
 
 
+
 ## CLONE SOME PROJECT FROM GITHUB
 
     git clone *SHH*
@@ -80,5 +91,21 @@ or
     git branch *new-branch*
     git checkoout *branch*
     git branch
-or
+        or
     git checkout -b *new-branch*
+
+
+## CHANGE OR DELETE COMMIT
+
+    git log --oneline
+    git revert *hash*
+    git push -u origin main
+
+
+# .gitignore
+
+Creating in main folder
+
+
+folder/  (ignore folder)
+*.md (ignore all files .md)
