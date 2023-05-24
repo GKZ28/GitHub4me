@@ -5,9 +5,9 @@
 
     __git init__ - (create new emty local repository)
 
-    git status - (show status of repository)
+    **git status** - (show status of repository)
 
-    git add *name of file* - adding file in repository
+    <b>git add *name of file*</B> - adding file in repository
     git add -A -(add ALL files)
 
     git commit -m "*commit*" - add commit (first commit named 
