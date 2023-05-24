@@ -3,29 +3,42 @@
 
 ## COMMANDS :
 
-    __git init__ - (create new emty local repository)
+    **git init** - (create new emty local repository)
 
-    **git status** - (show status of repository)
+    git status - (show status of repository)
 
-    <b>git add *name of file*</B> - adding file in repository
+    git add *name of file* - adding file in repository
     git add -A -(add ALL files)
 
     git commit -m "*commit*" - add commit (first commit named 
     *Initial commit*)
     git commit -amend -m "**" -(change commit)
+    git commit -a -m "*commit*" -(add+commit)
 
     git log  -(history of changes FULL)
     git log --oneline    -(history of changes small)
     git log --oneline --all    -(history of changes ALL)
+    git log *branch* --oneline   -(history of changes in corrent brunch)
 
     git checkout *hash*    - (join commit)
     git checkout main - (join last commit main commit)
 
-    git remote -v  -(watch the remote(удаленны) repository)
+    git remote -v  -(watch the remote(удаленный) repository)
     git remote add origin *SSH* (add remote repository to folder)
 
     git push -u origin main  -(send files to the remote repository)
-    
+    git push -u origin *branch*  -(send files to the remote repository from current branch)  
+
+    git clone *SHH*    - (clones somebodys repository to your computer)
+
+    cd *folder* - (change directory) cd folder2 (for example)
+
+    git branch - (check branches)
+    git branch *new-branch*  - (create a new branch)
+    git checkoout *branch*  - (join branch)
+    git checkout -b *new-branch* - (create and join new branch)
+
+    git merge *branch* -(merge branches (объеденить ветки, должен находиться в ветке в которую объеденяешь))
 
 
 ## CREATE NEW LOCAL REPOSITORY:
@@ -40,7 +53,8 @@
 
     git add *file* - file with changes
     git commit -m "Commit changes"
-
+or
+    git commit -a -m "*commit*"
 
 ## JOIN SOME COMMIT
 
@@ -55,3 +69,16 @@
     git push -u origin main
 
 
+## CLONE SOME PROJECT FROM GITHUB
+
+    git clone *SHH*
+    cd *directory of clone*
+
+
+## CREATE NEW BRANCH
+
+    git branch *new-branch*
+    git checkoout *branch*
+    git branch
+or
+    git checkout -b *new-branch*
