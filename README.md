@@ -3,7 +3,7 @@
 
 ## COMMANDS :
 
-    git init - (create new emty local repository)
+    __git init__ - (create new emty local repository)
 
     git status - (show status of repository)
 
@@ -52,5 +52,6 @@
 
     git remote add origin *SHH*
     git remote -v
+    git push -u origin main
 
 
