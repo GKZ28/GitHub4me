@@ -50,7 +50,6 @@
     git revert *hash* (correction or deletion coomit)
 
 
-
 ## CREATE NEW LOCAL REPOSITORY:
 
     git init
