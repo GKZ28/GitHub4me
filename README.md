@@ -76,6 +76,7 @@
     git remote add origin *SHH*
     git remote -v
     git push -u origin main
+    (для связи с удаленным репозиторием локальный репозиторий должен пройти комманды add и commit, то есть файлы должны быть отслеживаемые и закомиченные)
 
 
 
@@ -107,4 +108,5 @@ Creating in main folder
 
 
 folder/  (ignore folder)
+
 *.md (ignore all files .md)
