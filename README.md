@@ -12,7 +12,7 @@
 
     git commit -m "*commit*" - add commit (first commit named 
     *Initial commit*)
-    git commit -amend -m "**" -(change commit)
+    git commit --amend -m "**" -(change commit)
     git commit -a -m "*commit*" -(add+commit)
 
     git log  -(history of changes FULL)
